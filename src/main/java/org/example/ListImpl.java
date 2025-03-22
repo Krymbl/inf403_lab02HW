@@ -35,15 +35,17 @@ public class ListImpl<T> implements List<T> {
         Object[] temp = new Object[size];
         boolean check = false;
         for (int i = 0; i < size; i++) {
-            if (!check && values[i] != element) {
+            if (!check && !element.equals(values[i])) {
                 temp[i] = values[i];
+                size--;
             } else {
                 check = true;
                 temp[i] = values[i+1];
+                size--;
             }
         }
         values = temp;
-        size--;
+
         return element;
     }
 

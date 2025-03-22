@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        ListImpl <Integer> set = new ListImpl<Integer>();
+        ListImpl <Integer> set = new ListImpl <Integer>();
         set.add(1);
         set.add(2);
         set.add(3);
